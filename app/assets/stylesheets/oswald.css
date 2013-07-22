@@ -1,0 +1,46 @@
+
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Lora);
+
+/*** LOGO ***/
+
+body > .container_24 > div.header .logo a {
+	font-family: 'Oswald';
+	font-weight: 500;
+}
+
+/*** Hompage Short About ***/
+
+#home p {
+	font-family: 'Lora';
+}
+
+/*** Page Header ***/
+
+#content_holder h2, #gallery h2, .box > .header > .label {
+	font-family: 'Oswald';
+}
+
+/*** Subheader ***/
+
+#content_holder h3, #gallery h3 {
+	font-family: 'Lora';
+}
+
+/*** Standard Text ***/
+
+body {
+	font-family: 'Lora';
+}
+
+/*** Album Titles ***/
+
+#gallery ul li p {
+	font-family: 'Lora';
+}
+
+/*** Contact Section Titles ***/
+
+#content_holder p span.contact_title {
+	font-family: 'Lora';
+}
