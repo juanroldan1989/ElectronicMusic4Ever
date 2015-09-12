@@ -1,9 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.12'
-ruby '1.9.3'
+ruby '2.1.6'
+
+gem 'rails', '4.1'
 
 group :development, :test do
+  gem "bullet"
   gem 'sqlite3'
 end
 
@@ -13,9 +15,9 @@ group :production do
 end
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
+  gem 'sass-rails'
+  gem 'coffee-rails'
+  gem 'uglifier'
 end
 
 gem 'jquery-rails'
