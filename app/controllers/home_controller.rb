@@ -5,9 +5,6 @@ class HomeController < ApplicationController
   def about
   end
 
-  def news
-  end
-
   def gallery
   end
 
