@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 ruby '2.1.6'
 
 gem 'rails', '4.1'
+gem "figaro"
+gem "koala", "~> 2.2"
 
 group :development, :test do
   gem "bullet"
