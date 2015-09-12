@@ -1,21 +1,25 @@
 class RetrieveNews
-  PAGE_ID = "12" # ID TranceForEver Facebook's Page
+  PAGE_ID = "231320383554518".freeze # ID TranceForEver Facebook's Page
 
   def results
-    page_graph.wall # inspect
+    collection
   end
 
   private
+
+  def collection
+    @collection ||= page_graph.wall.collect { |post| PostWrapper.build_from(post) }
+  end
 
   def page_graph
     @page_graph ||= PageGraph.new(page_token)
   end
 
   def page_token
-    @page_token ||= @user_graph.page_token(PAGE_ID)
+    @page_token ||= user_graph.page_token(PAGE_ID)
   end
 
-  def setup_graph
+  def user_graph
     @user_graph ||= UserGraph.new(RetrieveUserToken.new.call)
   end
 end
