@@ -1,16 +1,16 @@
 class HomeController < ApplicationController
-	def index
-	end
+  def index
+  end
 
-	def about
-	end
+  def about
+  end
 
-	def news
-	end
+  def news
+  end
 
-	def gallery
-	end
+  def gallery
+  end
 
-	def contact
-	end
+  def contact
+  end
 end
