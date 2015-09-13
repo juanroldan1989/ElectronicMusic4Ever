@@ -5,6 +5,10 @@ class NewsController < ApplicationController
   def index
   end
 
+  def callback
+    
+  end
+
   private
 
   def collection

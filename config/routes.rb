@@ -3,5 +3,6 @@ ElectronicMusicRails::Application.routes.draw do
   get "/news"     => "news#index"
   get "/gallery"  => "home#gallery"
   get "/contact"  => "home#contact"
+  get "/callback" => "news#callback"
   root :to        => "home#index"
 end
