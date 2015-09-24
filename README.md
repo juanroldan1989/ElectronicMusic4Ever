@@ -1,13 +1,11 @@
-== Welcome to one of my personal site
+== Electronic Music Page
 
-This site is destined to share great electronic music!
+This site is free to be used by anyone who woud like to share content, images and
+posts from any Facebook Fan page.
 
-Mixing on of my favourite frameworks: "Rails", with one of my favourite
-hobbies: electronic music =P
+--------------------------------------
 
-This is still work in progress but I'm working on facebook integration,
-comments made in site and sharing into Facebook and Google+ fan pages and more...
-
-Peace!
-
-JR
+Work in progress:
+* I18n
+* Specs
+* Update News section with real posts from Facebook Fan page
