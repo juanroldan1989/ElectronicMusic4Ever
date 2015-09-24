@@ -8,4 +8,4 @@ posts from any Facebook Fan page.
 Work in progress:
 * I18n
 * Specs
-* Update News section with real posts from Facebook Fan page
+* Update News section with real posts from Facebook Fan page: https://www.facebook.com/www.tranceforever.com.ar
