@@ -3,8 +3,7 @@ development: &development
   #Application
   domain:              "http://localhost:3000"
   host:                "localhost:3000"
-  facebook_app_id:     "123123"
-  facebook_app_secret: "123abc"
+  facebook_page_token: "123123123|abcabcabc"
 
 test:
   <<: *development
@@ -14,5 +13,4 @@ production:
   #Application
   domain:              "http://localhost:3000"
   host:                "localhost:3000"
-  facebook_app_id:     "123123"
-  facebook_app_secret: "123abc"
+  facebook_page_token: "123123123|abcabcabc"
