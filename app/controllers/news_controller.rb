@@ -3,10 +3,11 @@ class NewsController < ApplicationController
   helper_method :collection
 
   def index
+
   end
 
   def callback
-    
+
   end
 
   private
