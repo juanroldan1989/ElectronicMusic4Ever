@@ -5,29 +5,36 @@ class PostWrapper
   attr_reader :facebook_link
   attr_reader :video_url
   attr_reader :image_url
+  attr_reader :created_at
 
-  def initialize(title, post_type, facebook_link, video_url, image_url)
-    @title         = title
-    @post_type     = post_type
-    @facebook_link = facebook_link
-    @video_url     = video_url
-    @image_url     = image_url
-  end
-
-  def self.build_from(post)
-    new(post["message"], "post_type", get_facebook_link, post["link"], post["picture"])
+  def initialize(post)
+    @title         = post["name"]
+    @post_type     = post["type"]
+    @facebook_link = get_facebook_link(post)
+    @video_url     = get_video_url(post)
+    @image_url     = post["picture"]
+    @created_at    = post["created_time"]
   end
 
   private
 
   def get_facebook_link(post)
-    if post["actions"].any?
+    if post["actions"] && post["actions"].any?
       if post["actions"].first.present?
         post["actions"].first["link"]
       else
         ""
+      end
     else
       ""
+    end
+  end
+
+  def get_video_url(post)
+    if match = post["link"].match(/youtube.com.*(?:\/|v=)([^&$]+)/)
+      video_id = match[1]
+
+      "https://www.youtube.com/embed/#{video_id}"
     end
   end
 end
