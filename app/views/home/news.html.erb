@@ -4,7 +4,7 @@
   <div class="header">
     <div class="temp">
       <div id="logo-container">
-        <div class="logo" style="font-size: 45px; line-height: 70px;"><%= link_to "Electronic Music 4 Ever", root_path, :title => "Electronic Music 4 Ever" %>
+        <div class="logo" style="font-size: 50px; line-height: 70px;"><%= link_to "Electronic Music 4 Ever", root_path, :title => "Electronic Music 4 Ever" %>
         </div>
       </div>
 
@@ -48,7 +48,7 @@
         <h2>News</h2>   
 
         <ul class="updates">
-          <% collection.each do |post_wrapper| %>
+          <% news.each do |post_wrapper| %>
             <li>
               <div class="date"><%= time_ago_in_words(post_wrapper.created_at) %> ago:</div>
               <div class="post">
