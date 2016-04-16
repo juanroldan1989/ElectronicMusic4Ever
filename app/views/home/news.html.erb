@@ -1,51 +1,12 @@
 <div class="transparent_overlay"></div>
 <div class="container_24 wrap">
 
-  <div class="header">
-    <div class="temp">
-      <div id="logo-container">
-        <div class="logo" style="font-size: 50px; line-height: 70px;"><%= link_to "Electronic Music 4 Ever", root_path, :title => "Electronic Music 4 Ever" %>
-        </div>
-      </div>
-
-      <ul id="nav">
-        <li class="active">
-            <a href="/" id="widget1"></a>
-         </li>
-         <li>
-            <a href="/about" id="widget2">About</a>
-         </li>
-         <li>
-            <a href="/news" id="widget3">News</a>
-         </li>
-         <li>
-            <a href="/gallery" id="widget4">Gallery</a>
-         </li>
-         <li>
-            <a href="/contact" id="widget5">Contact</a>
-         </li>
-      </ul>
-
-      <div class="social" style="width:20%">
-        <a href="https://plus.google.com/115808384490128467572" rel="publisher" target="_blank"><%= image_tag "google-plus-4-256.ico", style: "max-width:52%" %></a>
-        <a href="http://facebook.com/231320383554518" title="Facebook Page!" target="_blank"><%= image_tag "facebook.png" %></a>
-      </div>
-
-      <div class="fix"></div>
-      <a href="/news#" id="pull">Navigation</a><!--switching menus for mobile-->
-    </div>
-
-    <div class="footer">
-      <div class="left">© Electronic Music 4 Ever</div>
-      <div class="fix"></div>
-    </div>
-  </div><!-- Header Ends -->
+  <%= render partial: "shared/left_header" %>
 
   <div class="grid_15 alpha omega push_10 with_border">
-    <!-- content_holder starts -->
     <div id="content_holder">
       <div class="subholder">
-        <h2>News</h2>   
+        <h2>News</h2>
 
         <ul class="updates">
           <% news.each do |post_wrapper| %>
@@ -75,24 +36,8 @@
         </ul>
       </div>
     </div>
-    <!-- content_holder ends -->
 
-    <div class="to-be-hide"></div>
-    <div class="footer2">
-      <div class="left">© Electronic Music 4 Ever</div>
-      <div class="fix"></div>
-    </div>
+    <%= render partial: "shared/left_footer" %>
   </div>
 
-</div>
-
-<script type="text/javascript">
-  jQuery(function ($) {
-    //$('#logo-container').bigtext();
-  $.backstretch("images/1069790_620597254626827_967304324_n.jpg");
-  });
-</script>
-
-<div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 741px; width: 1530px; z-index: -999999; position: fixed;">
-<%= image_tag "1069790_620597254626827_967304324_n.jpg", :style => "position: absolute; margin: 0px; padding: 0px; border: none; width: 1530px; height: 1017.875px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -138.4375px;" %>
 </div>
