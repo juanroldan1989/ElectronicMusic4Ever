@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
+
+  helper_method :albums
   helper_method :news
 
   def index
@@ -17,6 +19,10 @@ class HomeController < ApplicationController
   end
 
   private
+
+  def albums
+    @albums ||= RetrieveAlbums.new.results
+  end
 
   def news
     @news ||= RetrieveNews.new.results
