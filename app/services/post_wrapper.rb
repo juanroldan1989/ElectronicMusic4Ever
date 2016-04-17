@@ -16,6 +16,10 @@ class PostWrapper
     @created_at    = post["created_time"]
   end
 
+  def to_partial_path
+    "/shared/news_item"
+  end
+
   private
 
   def get_facebook_link(post)

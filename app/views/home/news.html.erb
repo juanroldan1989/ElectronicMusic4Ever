@@ -1,6 +1,5 @@
 <div class="transparent_overlay"></div>
 <div class="container_24 wrap">
-
   <%= render partial: "shared/left_header" %>
 
   <div class="grid_15 alpha omega push_10 with_border">
@@ -9,35 +8,11 @@
         <h2>News</h2>
 
         <ul class="updates">
-          <% news.each do |post_wrapper| %>
-            <li>
-              <div class="date"><%= time_ago_in_words(post_wrapper.created_at) %> ago:</div>
-              <div class="post">
-                <div class="full_post">
-                  <%= post_wrapper.title %>
-
-                  <br/>
-                  <% if post_wrapper.post_type == "video" %>
-                    <iframe width="560" height="349" src="<%= post_wrapper.video_url %>" frameborder="0" allowfullscreen></iframe>
-                  <% elsif post_wrapper.post_type == "photo" %>
-                    <%= image_tag post_wrapper.image_url %>
-                  <% end %>
-                </div>
-
-                <% if post_wrapper.post_type == "video" %>
-                  <div class="more"><a href="<%= post_wrapper.video_url %>" target="_blank"><span>See video</span></a></div>
-                <% elsif post_wrapper.post_type == "photo" %>
-                  <div class="more"><a href="<%= post_wrapper.image_url %>" target="_blank"><span>See picture</span></a></div>
-                <% end %>
-              </div>
-              <div class="fix"></div>
-            </li>
-          <% end %>
+          <%= render news %>
         </ul>
       </div>
     </div>
-
-    <%= render partial: "shared/left_footer" %>
   </div>
-
 </div>
+
+<%= render partial: "shared/left_footer" %>
