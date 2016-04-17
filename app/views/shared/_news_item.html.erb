@@ -1,0 +1,22 @@
+<li>
+  <div class="date"><%= time_ago_in_words(news_item.created_at) %> ago:</div>
+  <div class="post">
+    <div class="full_post">
+      <%= news_item.title %>
+
+      <br/>
+      <% if news_item.post_type == "video" %>
+        <iframe width="560" height="349" src="<%= news_item.video_url %>" frameborder="0" allowfullscreen></iframe>
+      <% elsif news_item.post_type == "photo" %>
+        <%= image_tag news_item.image_url %>
+      <% end %>
+    </div>
+
+    <% if news_item.post_type == "video" %>
+      <div class="more"><a href="<%= news_item.video_url %>" target="_blank"><span>See video</span></a></div>
+    <% elsif news_item.post_type == "photo" %>
+      <div class="more"><a href="<%= news_item.image_url %>" target="_blank"><span>See picture</span></a></div>
+    <% end %>
+  </div>
+  <div class="fix"></div>
+</li>
