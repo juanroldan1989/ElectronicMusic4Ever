@@ -1,90 +1,29 @@
-  	<div class="transparent_overlay"></div>
-  	<div class="container_24 wrap">
-      	
-          <div class="header">
-          	<div class="temp">
-                  <div id="logo-container">
-                    <div class="logo" style="font-size: 45px; line-height: 70px;"><%= link_to "Electronic Music 4 Ever", root_path, :title => "Electronic Music 4 Ever" %></div>
-              	</div>
-                  <ul id="nav">
-						 				<li class="active">
-		                    <a href="/" id="widget1"></a>
-		                 </li>
-		                 <li>
-		                    <a href="/about" id="widget2">About</a>
-		                 </li>
-		                 <li>
-		                    <a href="/news" id="widget3">News</a>
-		                 </li>
-		                 <li>
-		                    <a href="/gallery" id="widget4">Gallery</a>
-		                 </li>
-		                 <li>
-		                    <a href="/contact" id="widget5">Contact</a>
-		                 </li>                            
-                  </ul>
-                  <div class="social" style="width:20%">
-                     <a href="https://plus.google.com/115808384490128467572" rel="publisher" target="_blank"><%= image_tag "google-plus-4-256.ico", style: "max-width:52%" %></a>
-                     <a href="http://facebook.com/231320383554518" title="Facebook Page!" target="_blank"><%= image_tag "facebook.png" %></a>
-                   </div>
-                  <div class="fix"></div>
-                  <a href="#" id="pull">Navigation</a><!--switching menus for mobile-->
-              </div>
-              <div class="footer">
-                  <div class="left">© Electronic Music 4 Ever</div>
-                  <div class="fix"></div>
-              </div>
-          </div><!-- Header Ends -->
-      
-          <div class="grid_15 alpha omega push_10 with_border" style="width: 1075px;">
-							<!-- home starts -->
-							<div id="home">
-									<p>Feeling what your freedom wants</p>
-					    </div>
-							<!-- home ends -->
-							<script type="text/javascript">
-							$(function(){
-								if( $(window).width() > 767 )
-								$('.container_24 .grid_15').width($(window).width()-($('.container_24 .header').width()+100));
-							});
-							$(window).resize(function() {
-								if( $(window).width() > 767 )
-							 		$('.container_24 .grid_15').width($(window).width()-($('.container_24 .header').width()+100));
-							});
+<div class="transparent_overlay"></div>
+<div class="container_24 wrap">
 
-							$(window).bind('orientationchange', function(event) {
-							 	if( $(window).width() > 767 )
-									$('.container_24 .grid_15').width($(window).width()-($('.container_24 .header').width()+100));
-							});
-							</script>
+  <%= render partial: "shared/left_header" %>
 
-	            <div class="to-be-hide"></div>
-	              <div class="footer2">
-	              <div class="left">© Electronic Music 4 Ever</div>
-	              <div class="fix"></div>
-	            </div>
-          </div>
-		</div>
-        <script type="text/javascript">
-		      jQuery(function ($) {
-		     		//$('#logo-container').bigtext();
-					$.backstretch("images/1069790_620597254626827_967304324_n.jpg");
-					});
-        </script>
-        
-        <!--<script>
-		 jQuery(function ($) {
-        	console.log(document.scrollHeight+' '+jQuery('.header').height());
-			if(jQuery(document).height() >= 768) {
-				console.log('>768');
-				jQuery('.header').css('overflow-y','hidden');
-				jQuery('.footer').css('overflow-y','hidden');
-			}
-		 });
-        </script>-->
-
-        	
-       
-<div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 741px; width: 1545px; z-index: -999999; position: fixed;">
-<%= image_tag "1069790_620597254626827_967304324_n.jpg", :style => "position: absolute; margin: 0px; padding: 0px; border: none; width: 1545px; height: 1027.8541666666667px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -143.42708333333337px;" %>
+  <div class="grid_15 alpha omega push_10 with_border" style="width: 1075px;">
+    <div id="home">
+      <p>Feeling what your freedom wants</p>
+    </div>
+  </div>
 </div>
+
+<%= render partial: "shared/left_footer" %>
+
+<script type="text/javascript">
+  $(function(){
+  if( $(window).width() > 767 )
+  $('.container_24 .grid_15').width($(window).width()-($('.container_24 .header').width()+100));
+  });
+  $(window).resize(function() {
+  if( $(window).width() > 767 )
+    $('.container_24 .grid_15').width($(window).width()-($('.container_24 .header').width()+100));
+  });
+
+  $(window).bind('orientationchange', function(event) {
+    if( $(window).width() > 767 )
+  $('.container_24 .grid_15').width($(window).width()-($('.container_24 .header').width()+100));
+  });
+</script>
