@@ -1,427 +1,57 @@
-    	<div class="transparent_overlay"></div>
-    	<div class="container_24 wrap">
-        	
-            <div class="header">
-            	<div class="temp">
-                <div id="logo-container">
-                <div class="logo" style="font-size: 45px; line-height: 70px;"><%= link_to "Electronic Music 4 Ever", root_path, :title => "Electronic Music 4 Ever" %></div>
-              	</div>
+<div class="transparent_overlay"></div>
+<div class="container_24 wrap">
+  <%= render partial: "shared/left_header" %>
 
-                <ul id="nav">
-					 				<li class="active">
-	                    <a href="/" id="widget1"></a>
-	                 </li>
-	                 <li>
-	                    <a href="/about" id="widget2">About</a>
-	                 </li>
-	                 <li>
-	                    <a href="/news" id="widget3">News</a>
-	                 </li>
-	                 <li>
-	                    <a href="/gallery" id="widget4">Gallery</a>
-	                 </li>
-	                 <li>
-	                    <a href="/contact" id="widget5">Contact</a>
-	                 </li>                            
-                </ul>
-
-                <div class="social" style="width:20%">
-                   <a href="https://plus.google.com/115808384490128467572" rel="publisher" target="_blank"><%= image_tag "google-plus-4-256.ico", style: "max-width:52%" %></a>
-                   <a href="http://facebook.com/231320383554518" title="Facebook Page!" target="_blank"><%= image_tag "facebook.png" %></a>
-                 </div>
-                    <div class="fix"></div>
-                    <a href="/gallery#" id="pull">Navigation</a><!--switching menus for mobile-->
+  <div class="grid_15 alpha omega push_10 with_border">
+    <div id="gallery">
+      <div class="subholder">
+        <h2>Gallery</h2>
+        <div class="tab_content" id="tab1" style="display: block;">
+          <ul class="shifted">
+            <li>
+              <div class="img-holder nailthumb-container" style="overflow: hidden; padding: 0px; width: 320px; height: 240px;">
+                <a href="images/gallery/1069790_620597254626827_967304324_n.jpg" class="fancybox" title="Click to see more!" rel="Cover Photos" style="">
+                  <div class="border">
+                    <img src="images/gallery/1069790_620597254626827_967304324_n.jpg" style="position: relative; width: 360.5633802816902px; height: 240px; top: 0px; left: -20.281690140845086px;" class="nailthumb-image">
+                  </div>
+                </a>
               </div>
-              <div class="footer">
-                  <div class="left">© Electronic Music 4 Ever</div>
-                  <div class="fix"></div>
-              </div>
-            </div><!-- Header Ends -->
-        
-            <div class="grid_15 alpha omega push_10 with_border">
-                                    <!-- gallery starts -->
-<div id="gallery">
-	<div class="subholder">
-        <h2>Gallery</h2>   
-        <h3 class="tab-title">
-        	<!-- <a href="/gallery#" title="Photos" class="active" rel="tab1">Photos</a>  -->
-                    </h3>
-            <div class="tab_content" id="tab1" style="display: block;">
-        <ul class="shifted">
-                        	
-                
-                                                            	      
-                        	                                                        <li>  
-                            	<div class="img-holder nailthumb-container" style="overflow: hidden; padding: 0px; width: 320px; height: 240px;">
-                                    <a href="images/gallery/1069790_620597254626827_967304324_n.jpg" class="fancybox" title="Click to see more!" rel="Cover Photos" style="">
-                                    <div class="border">
-                                        <img src="images/gallery/1069790_620597254626827_967304324_n.jpg" style="position: relative; width: 360.5633802816902px; height: 240px; top: 0px; left: -20.281690140845086px;" class="nailthumb-image">
-                                    </div>
-                                    </a>
-                                </div><!-- img-holder ends -->
-                    			<p>Cover Photos </p>
-                            </li>
-                                                            
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                               
-                                                           
-                    
-               
-                    	
-                
-                                                            	      
-                        	                                                        <li>  
-                            	<div class="img-holder nailthumb-container" style="overflow: hidden; padding: 0px; width: 320px; height: 240px;">
-                                    <a href="images/gallery/7178_611933942159825_1313859594_n.jpg" class="fancybox" title="Click to see more!" rel="Profile Pictures" style="">
-                                    <div class="border">
-                                        <img src="images/gallery/7178_611933942159825_1313859594_n.jpg" style="position: relative; width: 320px; height: 320px; top: -40px; left: 0px;" class="nailthumb-image">
-                                    </div>
-                                    </a>
-                                </div><!-- img-holder ends -->
-                    			<p>Profile Pictures </p>
-                            </li>
-                                                            
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                               
-                                                           
-                    
-               
-                    	
-                
-                                                            	      
-                        	                                                        <li>  
-                            	<div class="img-holder nailthumb-container" style="overflow: hidden; padding: 0px; width: 320px; height: 240px;">
-                                    <a href="images/gallery/375706_599267423426477_541347413_n.jpg" class="fancybox" title="Click to see more!" rel="Timeline Photos" style="">
-                                    <div class="border">
-                                        <img src="images/gallery/375706_599267423426477_541347413_n.jpg" style="position: relative; width: 362.2641509433962px; height: 240px; top: 0px; left: -21.1320754716981px;" class="nailthumb-image">
-                                    </div>
-                                    </a>
-                                </div><!-- img-holder ends -->
-                    			<p>Timeline Photos </p>
-                            </li>
-                                                            
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                               
-                                                           
-                    
-               
-                    	
-                
-                                                            	      
-                        	                                
-                        	                                                        <li>  
-                            	<div class="img-holder nailthumb-container" style="overflow: hidden; padding: 0px; width: 320px; height: 240px;">
-                                    <a href="images/gallery/945233_597730616913491_1462538244_n.jpg" class="fancybox" title="Click to see more!" rel="Epic photos" style="">
-                                    <div class="border">
-                                        <img src="images/gallery/945233_597730616913491_1462538244_n.jpg" style="position: relative; width: 872.7272727272726px; height: 239.99999999999997px; top: 0.000000000000014210854715202004px; left: -276.3636363636363px;" class="nailthumb-image">
-                                    </div>
-                                    </a>
-                                </div><!-- img-holder ends -->
-                    			<p>Epic photos </p>
-                            </li>
-                                                                           
-                                                           
-                    
-               
-                    	
-                
-                                                            	      
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                
-                        	                                               
-                                                            	 
-                                                <li>
-                        <div class="img-holder nailthumb-container" style="overflow: hidden; padding: 0px; width: 320px; height: 240px;">               
-                        	<a href="images/gallery/303824_283062341713655_1791054126_n.jpg" title="Click to see more!" class="fancybox" rel="Trance 4 Ever" style="">
-                               
-                                <div class="border">
-                                <img src="images/gallery/303824_283062341713655_1791054126_n.jpg" style="position: relative; width: 426.66666666666663px; height: 240px; top: 0px; left: -53.333333333333314px;" class="nailthumb-image">
-                                </div></a>
-                          </div><!-- img-holder ends -->
-                    		<p>Trance 4 Ever </p>
-                            </li>
-                    	                                       
-                    
-               
-                  
-        
-                                                                                         
-                        	                  
-                            <a href="images/gallery/971844_620009961352223_1193462283_n.jpg" title="" class="fancybox" rel="Cover Photos" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/1011861_619865074700045_1716159767_n.jpg" title="" class="fancybox" rel="Cover Photos" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/480196_611933218826564_1983453823_n.jpg" title="" class="fancybox" rel="Cover Photos" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/935456_593347500685136_1503435351_n.jpg" title="" class="fancybox" rel="Cover Photos" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/71412_578772532142633_813254039_n.jpg" title="" class="fancybox" rel="Cover Photos" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/28987_567970479889505_192790240_n.jpg" title="" class="fancybox" rel="Cover Photos" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/734616_536937289659491_1529828313_n.jpg" title="" class="fancybox" rel="Cover Photos" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/602899_532730363413517_1467062788_n.jpg" title="" class="fancybox" rel="Cover Photos" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/59620_515560831797137_719532266_n.jpg" title="" class="fancybox" rel="Cover Photos" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/559574_495014820518405_411685200_n.jpg" title="Tijs Michiel Verwest (17 de enero de 1969, Breda, Países Bajos)1 mejor conocido como Tiësto, es un músico, DJ, remixer y productor de música electrónica de baile, A pesar de que ha utilizado muchos alias en el pasado, es más conocido por su trabajo como DJ Tiësto. En su más reciente producción, sin embargo, ha quitado &quot;DJ&quot; de las etiquetas y es ahora conocido simplemente como &quot;Tiësto&quot;, un alias que es un giro de su sobrenombre de la infancia.
+              <p>Cover Photos </p>
+            </li>
 
-En 1997 fundó el sello que con la ayuda de abraham jurado rios Black Hole Recordings con Arny Bink, donde se lanzaron las series Magik y In Search Of Sunrise en CD. En 1999 y 2000 colaboró con Ferry Corsten para crear Gouryella. En 2000, su versión remixada de &quot;Silence&quot; para Delerium con Sarah McLachlan, lo expuso a un público más convencional. En 2001 lanzó su primer álbum en solitario In My Memory, que le dio varios empujones importantes lanzando su carrera.
-
-Justo después de lanzar su segundo álbum de estudio Just Be en 2004, en los Juegos Olímpicos de 2004 actuó en vivo en la ceremonia de apertura en Atenas, convirtiéndose en el primer DJ en tocar en vivo en el escenario de unos Juegos Olímpicos. Temas que hizo especialmente para los Juegos Olímpicos se mezclan y se lanzó como la compilación mezcla The Parade Of The Athletes. Fue nombrado Oficial de la Orden de Orange-Nassau en 2004 por la reina Beatriz. Fue elegido como el embajador oficial de la fundación Dance4Life en mayo de 2006, y lanzó la canción &quot;Dance4Life&quot; con Maxi Jazz para ayudar a difundir la conciencia sobre el VIH / SIDA. En abril de 2007, Tiësto estrenó su programa de radio Tiësto&#39;s Club Life en Radio 538 en los Países Bajos y lanzó su tercer álbum de estudio titulado Elements of Life. El álbum alcanzó el número uno en la lista de álbumes neerlandesa y el &quot;Billboard Top Electronic Albums&quot; en los EE.UU. y recibió una nominación para un premio Grammy en 2008. Tiësto lanzó su cuarto álbum de estudio llamado Kaleidoscope en octubre de 2009. Tiësto fue nombrado en 2002 como Mejor dj del mundo por la revista Djmag, título que repetiría en 2003 y 2004. Desde entonces Tiësto ha quedado 2º en el ranking excepto en 2006 cuando quedo 3°, lo que repitió 2010 y 2011. En septiembre de 2009 Tiësto sacó a la venta un álbum de remix de Kaleidoscope. En 2010 llevó a cabo su gira mundial donde ha conseguido el récord &quot; 154 conciertos en 14 meses &quot; algo que ningún dj ha hecho, a finales de 2010 Tiësto sacó a la venta una recopilación llamada &quot;Magikal Journey - The Hits Collection 1998-2008&quot; y un álbum de remixes de Kaleidoscope llamado &quot; Kaleidoscope Remixed &quot;. En 2009, funda su nuevo sello discográfico Musical Freedom, en el que edita todos sus trabajos actualmente.
-
-En abril del 2011, lanza una nueva serie de recopilaciones llamada &quot; Club Life: Volume One (Las Vegas)&quot;. Nombre debido a una serie de conciertos durante todo el año que ha hecho en el Hard Rock Hotel Casino en Las Vegas. Las canciones fueron elegidas basándose en las mejores canciones tocadas en sus conciertos. Inmediatamente luego empezó la gira &quot; Club Life World Tour&quot; que incluía conciertos por todo el mundo, en especial, América y Canadá. En 2012 publica la segunda parte de Club Life y esta vez hace referencia a una de sus ciudades favoritas, Miami." class="fancybox" rel="Cover Photos" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/377370_486719251347962_1088072780_n.jpg" title="Tijs Michiel Verwest (17 de enero de 1969, Breda, Países Bajos)1 mejor conocido como Tiësto, es un músico, DJ, remixer y productor de música electrónica de baile, A pesar de que ha utilizado muchos alias en el pasado, es más conocido por su trabajo como DJ Tiësto. En su más reciente producción, sin embargo, ha quitado &quot;DJ&quot; de las etiquetas y es ahora conocido simplemente como &quot;Tiësto&quot;, un alias que es un giro de su sobrenombre de la infancia.
-
-En 1997 fundó el sello que con la ayuda de abraham jurado rios Black Hole Recordings con Arny Bink, donde se lanzaron las series Magik y In Search Of Sunrise en CD. En 1999 y 2000 colaboró con Ferry Corsten para crear Gouryella. En 2000, su versión remixada de &quot;Silence&quot; para Delerium con Sarah McLachlan, lo expuso a un público más convencional. En 2001 lanzó su primer álbum en solitario In My Memory, que le dio varios empujones importantes lanzando su carrera.
-
-Justo después de lanzar su segundo álbum de estudio Just Be en 2004, en los Juegos Olímpicos de 2004 actuó en vivo en la ceremonia de apertura en Atenas, convirtiéndose en el primer DJ en tocar en vivo en el escenario de unos Juegos Olímpicos. Temas que hizo especialmente para los Juegos Olímpicos se mezclan y se lanzó como la compilación mezcla The Parade Of The Athletes. Fue nombrado Oficial de la Orden de Orange-Nassau en 2004 por la reina Beatriz. Fue elegido como el embajador oficial de la fundación Dance4Life en mayo de 2006, y lanzó la canción &quot;Dance4Life&quot; con Maxi Jazz para ayudar a difundir la conciencia sobre el VIH / SIDA. En abril de 2007, Tiësto estrenó su programa de radio Tiësto&#39;s Club Life en Radio 538 en los Países Bajos y lanzó su tercer álbum de estudio titulado Elements of Life. El álbum alcanzó el número uno en la lista de álbumes neerlandesa y el &quot;Billboard Top Electronic Albums&quot; en los EE.UU. y recibió una nominación para un premio Grammy en 2008. Tiësto lanzó su cuarto álbum de estudio llamado Kaleidoscope en octubre de 2009. Tiësto fue nombrado en 2002 como Mejor dj del mundo por la revista Djmag, título que repetiría en 2003 y 2004. Desde entonces Tiësto ha quedado 2º en el ranking excepto en 2006 cuando quedo 3°, lo que repitió 2010 y 2011. En septiembre de 2009 Tiësto sacó a la venta un álbum de remix de Kaleidoscope. En 2010 llevó a cabo su gira mundial donde ha conseguido el récord &quot; 154 conciertos en 14 meses &quot; algo que ningún dj ha hecho, a finales de 2010 Tiësto sacó a la venta una recopilación llamada &quot;Magikal Journey - The Hits Collection 1998-2008&quot; y un álbum de remixes de Kaleidoscope llamado &quot; Kaleidoscope Remixed &quot;. En 2009, funda su nuevo sello discográfico Musical Freedom, en el que edita todos sus trabajos actualmente.
-
-En abril del 2011, lanza una nueva serie de recopilaciones llamada &quot; Club Life: Volume One (Las Vegas)&quot;. Nombre debido a una serie de conciertos durante todo el año que ha hecho en el Hard Rock Hotel Casino en Las Vegas. Las canciones fueron elegidas basándose en las mejores canciones tocadas en sus conciertos. Inmediatamente luego empezó la gira &quot; Club Life World Tour&quot; que incluía conciertos por todo el mundo, en especial, América y Canadá. En 2012 publica la segunda parte de Club Life y esta vez hace referencia a una de sus ciudades favoritas, Miami." class="fancybox" rel="Cover Photos" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/538927_484946804858540_605365585_n.jpg" title="" class="fancybox" rel="Cover Photos" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/539474_479824685370752_1621956822_n.jpg" title="" class="fancybox" rel="Cover Photos" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/551600_432822803404274_703451193_n.jpg" title="" class="fancybox" rel="Cover Photos" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/421568_369415296411692_941894015_n.jpg" title="" class="fancybox" rel="Cover Photos" style="display: none; height: 0; width: 0;"></a>
-                                                                                            
-                                                                                         
-                        	                  
-                            <a href="images/gallery/316113_593348047351748_58125568_n.jpg" title="" class="fancybox" rel="Profile Pictures" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/308259_292528517433704_50547659_n.jpg" title="" class="fancybox" rel="Profile Pictures" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/375690_292324827454073_419703539_n.jpg" title="Armin van Buuren (Leiden, Países Bajos; 25 de diciembre de 1976) es un DJ y productor de música trance. Según el ranking elaborado por DJ Magazine, ha sido nombrado DJ número 1 del Mundo en 2007, 2008, 2009, 2010 siendo el único hasta la fecha en conseguir este galardón cuatro veces consecutivas. Armin van Buuren también tiene un importante programa de radio llamado A State of Trance que cuenta con 15 millones de oyentes semanales en más de 26 países lo cual lo convierte en uno de los programas de radio más escuchados en el mundo. Su álbum de estudio Imagine lanzado en 2008 entró en el número uno de la lista holandesa de álbumes, siendo así la primera vez que un artista de música dance obtiene ese lugar en las listas holandesas." class="fancybox" rel="Profile Pictures" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/318356_282596591760230_142414818_n.jpg" title="" class="fancybox" rel="Profile Pictures" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/269153_231322050221018_6416630_n.jpg" title="" class="fancybox" rel="Profile Pictures" style="display: none; height: 0; width: 0;"></a>
-                                                                                            
-                                                                                         
-                        	                  
-                            <a href="images/gallery/269366_567560839930469_1680666131_n.jpg" title="Tiësto !" class="fancybox" rel="Timeline Photos" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/385271_532891173397436_1746860357_n.jpg" title="Gareth Emery" class="fancybox" rel="Timeline Photos" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/72851_529585540394666_846169536_n.jpg" title="Daft Punk vs. Pulp Fiction  xD" class="fancybox" rel="Timeline Photos" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/45341_432822500070971_414732244_n.jpg" title="" class="fancybox" rel="Timeline Photos" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/558749_425394694147085_1638731636_n.jpg" title="" class="fancybox" rel="Timeline Photos" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/381552_328948773791678_952481356_n.jpg" title="http://portalgeek.org/wp-content/uploads/2011/12/Happy-New-Year_2012.jpg" class="fancybox" rel="Timeline Photos" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/409456_324354724251083_1821155724_n.jpg" title="" class="fancybox" rel="Timeline Photos" style="display: none; height: 0; width: 0;"></a>
-                                                                                            
-                                             
-                        	                  
-                            <a href="images/gallery/382462_597730620246824_1035039162_n.jpg" title="" class="fancybox" rel="Epic photos" style="display: none; height: 0; width: 0;"></a>
-                                                                                                                                        
-                                             
-                        	                                                                     
-                        	                  
-                            <a href="images/gallery/303824_283062328380323_2099482166_n.jpg" title="" class="fancybox" rel="Trance 4 Ever" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/303824_283062338380322_2093237398_n.jpg" title="" class="fancybox" rel="Trance 4 Ever" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/321083_282592251760664_1519242589_n.jpg" title="" class="fancybox" rel="Trance 4 Ever" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/321083_282592255093997_1471196506_n.jpg" title="" class="fancybox" rel="Trance 4 Ever" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/321083_282592268427329_2052407749_n.jpg" title="" class="fancybox" rel="Trance 4 Ever" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/321083_282592265093996_693276271_n.jpg" title="" class="fancybox" rel="Trance 4 Ever" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/319599_282401998446356_594439532_n.jpg" title="" class="fancybox" rel="Trance 4 Ever" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/319599_282402001779689_361401360_n.jpg" title="" class="fancybox" rel="Trance 4 Ever" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/315947_282398091780080_2083180265_n.jpg" title="" class="fancybox" rel="Trance 4 Ever" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/308864_281895651830324_1377227005_n.jpg" title="" class="fancybox" rel="Trance 4 Ever" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/293969_263756690310887_7044903_n.jpg" title="" class="fancybox" rel="Trance 4 Ever" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/300702_263756676977555_3565308_n.jpg" title="" class="fancybox" rel="Trance 4 Ever" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/321118_263756650310891_1578218_n.jpg" title="" class="fancybox" rel="Trance 4 Ever" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/302456_263756626977560_4578163_n.jpg" title="" class="fancybox" rel="Trance 4 Ever" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/298397_263756590310897_8294129_n.jpg" title="" class="fancybox" rel="Trance 4 Ever" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/294502_263232110363345_1960038_n.jpg" title="" class="fancybox" rel="Trance 4 Ever" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/315032_263232063696683_6167147_n.jpg" title="" class="fancybox" rel="Trance 4 Ever" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/292733_263232037030019_3056892_n.jpg" title="" class="fancybox" rel="Trance 4 Ever" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/314187_263232003696689_6939924_n.jpg" title="" class="fancybox" rel="Trance 4 Ever" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/291728_263231977030025_2408749_n.jpg" title="" class="fancybox" rel="Trance 4 Ever" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/265021_237121372974419_5845776_n.jpg" title="" class="fancybox" rel="Trance 4 Ever" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/270659_236951896324700_1323726_n.jpg" title="" class="fancybox" rel="Trance 4 Ever" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/268904_236951856324704_66075_n.jpg" title="" class="fancybox" rel="Trance 4 Ever" style="display: none; height: 0; width: 0;"></a>
-                                                                                                 
-                        	                  
-                            <a href="images/gallery/269519_236951836324706_3995496_n.jpg" title="" class="fancybox" rel="Trance 4 Ever" style="display: none; height: 0; width: 0;"></a>
-                                                                                            </ul>
+            <a href="images/gallery/971844_620009961352223_1193462283_n.jpg" title="" class="fancybox" rel="Cover Photos" style="display: none; height: 0; width: 0;"></a>
+            <a href="images/gallery/1011861_619865074700045_1716159767_n.jpg" title="" class="fancybox" rel="Cover Photos" style="display: none; height: 0; width: 0;"></a>
+            <a href="images/gallery/480196_611933218826564_1983453823_n.jpg" title="" class="fancybox" rel="Cover Photos" style="display: none; height: 0; width: 0;"></a>
+          </ul>
         </div>
-                <div class="tab_content" id="tab2" style="display: none;">
-                                </div>
-   		</div>     
-   </div>
-<!-- gallery ends -->
+        <div class="tab_content" id="tab2" style="display: none;"></div>
+       </div>
+    </div>
+  </div>
+</div>
+
+<%= render partial: "shared/left_footer" %>
 
 <script type="text/javascript">
-	$(function(){
-		$(".border > img").mouseenter(function() {
-			var $p = $(this);
-			var $pp = $(this).parent().parent().parent();
-			//alert($pp.html());
-			$pp.css('background','#F15A24');
-			if (!$p.hasClass('in-trans') && !$p.hasClass('in-hover')) {
-				//$pp('.thumb-title').css('color','red');
-				$p.addClass('in-trans').fadeTo(1, 0.5, function() {
-					$p.addClass('in-hover').removeClass('in-trans');;
-				});
-			}
-		}).mouseleave(function() {
-			var $p = $(this);
-			var $pp = $(this).parent().parent().parent();
-			$pp.css('background','#50534F');
-			
-			$p.addClass('in-trans').fadeTo(1, 1, function() {
-				$p.removeClass('in-hover').removeClass('in-trans');;
-			});
-		});
-	});
+  $(function(){
+    $(".border > img").mouseenter(function() {
+      var $p = $(this);
+      var $pp = $(this).parent().parent().parent();
+      //alert($pp.html());
+      $pp.css('background','#F15A24');
+      if (!$p.hasClass('in-trans') && !$p.hasClass('in-hover')) {
+        //$pp('.thumb-title').css('color','red');
+        $p.addClass('in-trans').fadeTo(1, 0.5, function() {
+          $p.addClass('in-hover').removeClass('in-trans');;
+        });
+      }
+    }).mouseleave(function() {
+      var $p = $(this);
+      var $pp = $(this).parent().parent().parent();
+      $pp.css('background','#50534F');
+      $p.addClass('in-trans').fadeTo(1, 1, function() {
+        $p.removeClass('in-hover').removeClass('in-trans');;
+      });
+    });
+  });
 </script>
-
-                                    <div class="to-be-hide"></div>
-                <div class="footer2">
-                    <div class="left">© Electronic Music 4 Ever</div>
-                    <div class="fix"></div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <script type="text/javascript">
-		      jQuery(function ($) {
-		     		//$('#logo-container').bigtext();
-					$.backstretch("images/1069790_620597254626827_967304324_n.jpg");
-					});
-        </script>
-
-        <!--<script>
-		 jQuery(function ($) {
-        	console.log(document.scrollHeight+' '+jQuery('.header').height());
-			if(jQuery(document).height() >= 768) {
-				console.log('>768');
-				jQuery('.header').css('overflow-y','hidden');
-				jQuery('.footer').css('overflow-y','hidden');
-			}
-		 });
-        </script>-->
-
-        	
-<div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 741px; width: 1530px; z-index: -999999; position: fixed;"><%= image_tag "1069790_620597254626827_967304324_n.jpg", :style => "position: absolute; margin: 0px; padding: 0px; border: none; width: 1530px; height: 1017.875px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -138.4375px;" %>
-</div>
