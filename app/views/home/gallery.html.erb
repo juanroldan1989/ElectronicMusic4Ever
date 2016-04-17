@@ -8,26 +8,10 @@
         <h2>Gallery</h2>
         <div class="tab_content" id="tab1" style="display: block;">
           <ul class="shifted">
-            <% albums.each do |album| %>
-              <li>
-                <div class="img-holder nailthumb-container" style="overflow: hidden; padding: 0px; width: 320px; height: 240px;">
-                  <a href="<%= album.cover_photo %>" class="fancybox" title="<%= album.title %>" rel="<%= album.title %>" style="">
-                    <div class="border">
-                      <img src="<%= album.cover_photo %>" style="position: relative; width: 360.5633802816902px; height: 240px; top: 0px; left: -20.281690140845086px;" class="nailthumb-image">
-                    </div>
-                  </a>
-                </div>
-                <p><%= album.title %></p>
-              </li>
-
-              <% album.photos.each do |url| %>
-                <a href="<%= url %>" title="" class="fancybox" rel="<%= album.title %>" style="display: none; height: 0; width: 0;"></a>
-              <% end %>
-            <% end %>
+            <%= render albums %>
           </ul>
         </div>
-        <div class="tab_content" id="tab2" style="display: none;"></div>
-       </div>
+      </div>
     </div>
   </div>
 </div>
