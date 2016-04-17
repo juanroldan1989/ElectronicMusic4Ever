@@ -1,8 +1,7 @@
 class RetrieveAlbums
 
   def results
-    @results ||=
-      page_graph.albums.collect { |album| AlbumWrapper.new(album) }
+    @results ||= page_graph.albums.collect { |album| AlbumWrapper.new(album) }
   end
 
   private
