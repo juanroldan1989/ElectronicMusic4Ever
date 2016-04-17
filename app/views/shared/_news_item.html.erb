@@ -3,13 +3,8 @@
   <div class="post">
     <div class="full_post">
       <%= news_item.title %>
-
       <br/>
-      <% if news_item.post_type == "video" %>
-        <iframe width="560" height="349" src="<%= news_item.video_url %>" frameborder="0" allowfullscreen></iframe>
-      <% elsif news_item.post_type == "photo" %>
-        <%= image_tag news_item.image_url %>
-      <% end %>
+      <%= post_image_link(news_item) %>
     </div>
 
     <% if news_item.post_type == "video" %>

@@ -11,7 +11,7 @@ class PostWrapper
     @title         = post["name"]
     @post_type     = post["type"]
     @facebook_link = get_facebook_link(post)
-    @video_url     = get_video_url(post)
+    @video_url     = post["link"]
     @image_url     = post["picture"]
     @created_at    = post["created_time"]
   end
@@ -31,14 +31,6 @@ class PostWrapper
       end
     else
       ""
-    end
-  end
-
-  def get_video_url(post)
-    if match = post["link"].match(/youtube.com.*(?:\/|v=)([^&$]+)/)
-      video_id = match[1]
-
-      "https://www.youtube.com/embed/#{video_id}"
     end
   end
 end
