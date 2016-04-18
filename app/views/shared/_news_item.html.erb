@@ -6,12 +6,6 @@
       <br/>
       <%= news_image_link(news_item) %>
     </div>
-
-    <% if news_item.post_type == "video" %>
-      <div class="more"><a href="<%= news_item.video_url %>" target="_blank"><span>See video</span></a></div>
-    <% elsif news_item.post_type == "photo" %>
-      <div class="more"><a href="<%= news_item.image_url %>" target="_blank"><span>See picture</span></a></div>
-    <% end %>
   </div>
   <div class="fix"></div>
 </li>
