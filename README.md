@@ -46,7 +46,7 @@ foreman start
 
 ### 2. Q&A
 
-Questions or problems? Please post them on the [issue tracker](https://github.com/juanroldan1989/my-budget-app/issues). You can contribute changes by forking the project and submitting a pull request. You can ensure the tests are passing by running `rspec spec`.
+Questions or problems? Please post them on the [issue tracker](https://github.com/juanroldan1989/electronic-music/issues). You can contribute changes by forking the project and submitting a pull request. You can ensure the tests are passing by running `rspec spec`.
 
 
 ### 3. Live app
