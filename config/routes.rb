@@ -1,4 +1,4 @@
-ElectronicMusicRails::Application.routes.draw do
+Rails.application.routes.draw do
   get "/about"    => "home#about"
   get "/news"     => "home#news"
   get "/gallery"  => "home#gallery"
