@@ -1,0 +1,8 @@
+languages:
+  Ruby: true
+  JavaScript: true
+exclude_paths:
+- "public/assets/"
+- "app/assets/javascripts/jquery-1.8.2.js"
+- "app/assets/javascripts/jquery.fancybox.js"
+- "app/assets/javascripts/jquery.nailthumb.1.1.js"
