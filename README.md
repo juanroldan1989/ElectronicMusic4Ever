@@ -1,5 +1,5 @@
 <div align="left">
-  <a href="https://github.com/juanroldan1989/electronic-music"><img width="500" src="https://github.com/juanroldan1989/electronic-music/raw/master/public/images/background_logo.jpg" alt="electronic music logo" /></a>
+  <a href="https://github.com/juanroldan1989/electronic-music"><img width="350" src="https://github.com/juanroldan1989/electronic-music/raw/master/public/images/background_logo.jpg" alt="electronic music logo" /></a>
 </div>
 
 # Electronic Music
