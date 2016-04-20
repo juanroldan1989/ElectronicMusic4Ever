@@ -1,16 +1,14 @@
 class PageGraph
 
-  PAGE_ID = "231320383554518".freeze
-
   attr_reader :graph
 
   def initialize
     @graph = Koala::Facebook::API.new(page_token)
   end
 
-  # Graph API explorer query: 231320383554518/feed?fields=name,type,link,picture,created_time
+  # Graph API explorer query: page_id/feed?fields=name,type,link,picture,created_time
   def posts
-    @graph.get_connections(PAGE_ID, "feed",
+    @graph.get_connections(page_id, "feed",
       {
         "limit"  => "50",
         "fields" => ["name", "type", "link", "picture", "created_time"]
@@ -18,9 +16,9 @@ class PageGraph
     )
   end
 
-  # Graph API explorer query: 231320383554518/albums?fields=name,link,photos{images}
+  # Graph API explorer query: page_id/albums?fields=name,link,photos{images}
   def albums
-    @graph.get_connections(PAGE_ID, "albums",
+    @graph.get_connections(page_id, "albums",
       {
         "limit"  => "10",
         "fields" => ["name", "link", "photos{images}"]
@@ -29,6 +27,10 @@ class PageGraph
   end
 
   private
+
+  def page_id
+    Rails.application.config.facebook_page_id
+  end
 
   # https://developers.facebook.com/tools/accesstoken/
   def page_token
