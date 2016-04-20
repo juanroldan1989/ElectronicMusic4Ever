@@ -3,12 +3,13 @@
 </div>
 
 # Electronic Music
-
-### An open-source platform to display data from creative facebook pages
-
 [![Code Climate](https://codeclimate.com/github/juanroldan1989/electronic-music/badges/gpa.svg?branch=master)](https://codeclimate.com/github/juanroldan1989/electronic-music)
 [![Build Status](https://travis-ci.org/juanroldan1989/electronic-music.svg?branch=master)](https://travis-ci.org/juanroldan1989/electronic-music)
 [![Coverage Status](https://coveralls.io/repos/github/juanroldan1989/electronic-music/badge.svg?branch=master)](https://coveralls.io/github/juanroldan1989/electronic-music?branch=master)
+
+### An open-source platform to display data from creative facebook pages
+
+##### Facebook page took as example: [Electronic Music 4 Ever](https://www.facebook.com/www.tranceforever.com.ar)
 
 ### 1. Development
 
@@ -24,9 +25,11 @@ Install gems:
 bundle install
 ```
 
-Get Facebook Page Token from: https://developers.facebook.com/tools/accesstoken
+Get `FacebookPage's Token` from: https://developers.facebook.com/tools/accesstoken
 
-Set token's value inside `application.yml` file:
+Get `FacebookPage's ID` as explained here: https://www.facebook.com/help/community/question/?id=378910098941520
+
+Set values inside `application.yml` file:
 
 ```
 cp config/application.sample.yml config/application.yml
@@ -44,11 +47,17 @@ Launch server:
 foreman start
 ```
 
-### 2. Q&A
+### 2. Page structure 
+
+* Currently there are 4 main sections: `About`, `News`, `Gallery` and `Contact`.
+* `News` and `Gallery` sections retrieve live data from Facebook page.
+
+
+### 3. Q&A
 
 Questions or problems? Please post them on the [issue tracker](https://github.com/juanroldan1989/electronic-music/issues). You can contribute changes by forking the project and submitting a pull request. You can ensure the tests are passing by running `rspec spec`.
 
 
-### 3. Live app
+### 4. Live app
 
 http://electronic-music.herokuapp.com/
