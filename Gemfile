@@ -13,6 +13,8 @@ group :test, :development do
   gem "foreman",          "~> 0.78.0"
   gem "rspec-rails",      "~> 3.4.2"
   gem "shoulda-matchers", "~> 3.1.1"
+  gem "vcr",              "~> 3.0.1"
+  gem "webmock",          "~> 1.24.3"
 end
 
 group :production do
