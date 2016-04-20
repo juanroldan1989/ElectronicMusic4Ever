@@ -3,14 +3,13 @@
 </div>
 
 # Electronic Music
+[![Code Climate](https://codeclimate.com/github/juanroldan1989/electronic-music/badges/gpa.svg?branch=master)](https://codeclimate.com/github/juanroldan1989/electronic-music)
+[![Build Status](https://travis-ci.org/juanroldan1989/electronic-music.svg?branch=master)](https://travis-ci.org/juanroldan1989/electronic-music)
+[![Coverage Status](https://coveralls.io/repos/github/juanroldan1989/electronic-music/badge.svg?branch=master)](https://coveralls.io/github/juanroldan1989/electronic-music?branch=master)
 
 ### An open-source platform to display data from creative facebook pages
 
 ##### Facebook page took as example: [Electronic Music 4 Ever](https://www.facebook.com/www.tranceforever.com.ar)
-
-[![Code Climate](https://codeclimate.com/github/juanroldan1989/electronic-music/badges/gpa.svg?branch=master)](https://codeclimate.com/github/juanroldan1989/electronic-music)
-[![Build Status](https://travis-ci.org/juanroldan1989/electronic-music.svg?branch=master)](https://travis-ci.org/juanroldan1989/electronic-music)
-[![Coverage Status](https://coveralls.io/repos/github/juanroldan1989/electronic-music/badge.svg?branch=master)](https://coveralls.io/github/juanroldan1989/electronic-music?branch=master)
 
 ### 1. Development
 
@@ -26,9 +25,9 @@ Install gems:
 bundle install
 ```
 
-Get FacebookPage's Token from: https://developers.facebook.com/tools/accesstoken
+Get `FacebookPage's Token` from: https://developers.facebook.com/tools/accesstoken
 
-Get FacebookPage's ID as explained here: https://www.facebook.com/help/community/question/?id=378910098941520
+Get `FacebookPage's ID` as explained here: https://www.facebook.com/help/community/question/?id=378910098941520
 
 Set values inside `application.yml` file:
 
@@ -50,8 +49,8 @@ foreman start
 
 ### 2. Page structure 
 
-* Currently there are 4 main sections: About, News, Gallery and Contact.
-* News and Gallery sections retrieve live data from Facebook page.
+* Currently there are 4 main sections: `About`, `News`, `Gallery` and `Contact`.
+* `News` and `Gallery` sections retrieve live data from Facebook page.
 
 
 ### 3. Q&A
