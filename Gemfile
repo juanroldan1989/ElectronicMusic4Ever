@@ -9,8 +9,11 @@ gem "koala",              "~> 2.2"
 gem "pg",                 "~> 0.18.3"
 gem "rails",              "~> 4.1"
 
-group :test, :development do
+group :development do
   gem "foreman",          "~> 0.78.0"
+end
+
+group :test do
   gem "rspec-rails",      "~> 3.4.2"
   gem "shoulda-matchers", "~> 3.1.1"
   gem "vcr",              "~> 3.0.1"
