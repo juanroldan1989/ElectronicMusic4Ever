@@ -1,16 +1,14 @@
 development: &development
 
-  #Application
-  domain:              "http://localhost:3000"
-  host:                "localhost:3000"
-  facebook_page_token: "123123123|abcabcabc"
+  facebook_page_id:    "231320383554518"
+  facebook_page_token: "123123123abcabcabc"
 
 test:
-  <<: *development
+
+  facebook_page_id:    "231320383554518"
+  facebook_page_token: "123123123abcabcabc"
 
 production:
 
-  #Application
-  domain:              "http://localhost:3000"
-  host:                "localhost:3000"
-  facebook_page_token: "123123123|abcabcabc"
+  facebook_page_id:    "231320383554518"
+  facebook_page_token: "123123123abcabcabc"
