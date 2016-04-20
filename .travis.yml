@@ -3,6 +3,7 @@ rvm:
  - "2.1.6"
 before_script:
   - cp config/database.travis.yml config/database.yml
+  - cp config/application.sample.yml config/application.yml
   - psql -c 'create database travis_ci_test;' -U postgres
   - bundle exec rake db:migrate
   - bundle exec rake db:test:prepare
