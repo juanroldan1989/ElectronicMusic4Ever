@@ -47,10 +47,11 @@ Launch server:
 foreman start
 ```
 
-### 2. Page structure 
+### 2. Features
 
 * Currently there are 4 main sections: `About`, `News`, `Gallery` and `Contact`.
 * `News` and `Gallery` sections retrieve live data from Facebook page.
+* API integration tests recorded and fully tested using [vcr](https://github.com/vcr/vcr) gem: fast tests (first HTTP request is real and it's response is stored for future runs), deterministic (tests will continue to pass, even if you are offline, or eventfinda.co.nz goes down for maintenance) and accurate (responses will contain the same headers and body you get from a real request).
 
 
 ### 3. Q&A
